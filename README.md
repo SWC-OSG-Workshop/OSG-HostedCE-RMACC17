@@ -72,6 +72,7 @@ The OSG provides monitoring to view which communities are accessing your site, t
 ![fig gracc](https://raw.githubusercontent.com/OSGConnect/connectbook/master/images/screenshot_2979.png)
 
 <br/>
+
 ## **Optional**: Providing Access to Application Software Using OASIS
 
 Many OSG communities use software modules provided by their collaborations or by
