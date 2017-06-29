@@ -1,16 +1,16 @@
 ---
 layout: workshop
 root: .
-venue: Enabling Science Beyond the Campus Edge: HPC Integration with the Open Science Grid, PEARC17
+venue: High-Throughput Computation on the Open Science Grid and AWS, PEARC17
 address: New Orleans, LA
 country: United States
 humandate: July 10, 2017
-humantime: 1:30 pm - 5:00 pm
+humantime: 9:00 am - 12:30 pm
 startdate: July-10-2017
 enddate: July-10-2017
 latlng: 29.951004, -90.076974
 registration: https://www.pearc.org/schedule
-instructor: ["Rob Garder, Suchandra Thapa"]
+instructor: ["Rob Garder, Mats Rynge"]
 helper: ["To be described"]
 
 contact: user-support@opensciencegrid.org
@@ -33,20 +33,19 @@ Practice and Experience in Advanced Research Computing 2017 (PEARC17) July 9-13,
 
 <h2>General Information</h2>
 
-<p>
-Enabling campus researchers to share computational and data resources with
-external collaborators is a powerful multiplier in advancing science. Sharing
-spare capacity for even short durations allows an institutional HPC resource a
-cost-efficient means of participating in a larger cyber ecosystem. In this
-session we will show you how to integrate your HPC cluster resource to the Open
-Science Grid to support collaborative, multi-institutional science. The only
-requirements are that your cluster can provide SSH access to a single OSG staff
-member, that your cluster job submission and worker nodes have outbound IP
-connectivity, the operating system is CentOS/RHEL 6.x, 7.x or similar, and that
-a common batch scheduler is used (e.g. SLURM, PBS, HTCondor). During the
-tutorial we will configure OSG managed services to deliver workloads from
-science communities using the OSG to your HPC cluster.
-
+Would you like to use distributed resources of the
+<a href="http://www.opensciencegrid.org">Open Science Grid</a>, or
+just want to learn how to do large-scale high throughput computing? The
+format of this tutorial is a mix of lecture and hands-on exercises, so
+please bring your laptop and make sure you have an SSH client installed.
+You will be provided with a training account on OSG Connect which,
+during the tutorial, will be upgraded to a full user account. After
+the session, you will have full access to the OSG, know how to run and
+scale up workloads, manage your data and also submit to Amazon cloud
+resources. If time permits, the OSG User Support team will also help
+get your own workload set up for execution on OSG. Topics to include:
+Introduction to OSG Connect; Job Scheduling with HTCondor; Scaling Up
+Workloads; Managing data; High throughput submission to Amazon cloud
 </p>
   
 <!-- This block displays the instructors' names if they are available. -->
@@ -99,8 +98,8 @@ science communities using the OSG to your HPC cluster.
 -->
 <p>
   <strong>Requirements:</strong>
-  Participants must fill out the survey and should have an user setup on their
-  cluster.  (see <a href="setup.html">Setup</a>).
+  Participants must bring a laptop with a few specific software packages installed
+  (see <a href="setup.html">Setup</a>).
 </p>
 
 <!--
@@ -131,20 +130,17 @@ Space is limited for the event. To register,  please <a href="{{page.registratio
 <h2>Schedule</h2>
 <h2> </h2>
 <div class="row-fluid">
-    <h4> Enabling Science Beyond the Campus Edge: HPC Integration with the Open Science Grid </h4>
-    <h4> July 10th, 1:30 PM - 5:00 PM </h4>
+    <h4> High-Throughput Computation on the Open Science Grid and AWS </h4>
+    <h4> July 10th, 9:00 AM - 12:30 PM </h4>
     <h5>Location: TBD </h5>
     <h5>Instructors: TBD</h5>
      <h3> </h3>
     <table class="table table-striped">
-      <tr> <td>1:30 - 1:45 </td> <td> <a href=""> Quick overview of the OSG
-      infrastructure and tutorial goals</a> </td> </tr>
-      <tr> <td>1:45 - 2:00 </td> <td><a href="">Trust model and security
-      assesment of the hosted compute element</a></td> </tr>
-      <tr> <td>2:00 - 2:30 </td> <td>Demonstration </td> </tr>
-      <tr> <td>2:30 - 2:45</td> <td><em>Coffee break</em></td> </tr>
-      <tr> <td>2:45 - 4:45 </td> <td><a href="handson.html">Hands-on session</a></td></td></td></tr>
-      <tr> <td>4:45 - 5:00</td> <td>Wrap up and Next Steps</td> </tr>
+      <tr> <td>09:00 - 09:15 </td> <td> <a href="novice/DHTC/01-IntroGrid.html">Introduction to OSG </a> </td> </tr>
+      <tr> <td>09:15 - 10:00 </td> <td><a href="novice/DHTC/04-HTCondor-Submitting.html">Job Scheduling with HTCondor</a></td> </tr>
+      <tr> <td>10:00 - 10:30 </td> <td><a href="novice/DHTC/04a-ScalingUp.html">Large scale Computation with HTCondor</a> </td> </tr>
+      <tr> <td>10:30 - 11:00</td> <td><em>Coffee break</em></td> </tr>
+      <tr> <td>11:00 - 12:30 </td> <td><a href="novice/DHTC/08-condor_annex.html">Adding Resources from Amazon AWS</a> </td></td></td></tr>
     </table>
   </div>
 <hr/>
@@ -157,8 +153,7 @@ Space is limited for the event. To register,  please <a href="{{page.registratio
 
 <h2>Setup Instructions </h2>
 <p>
-  <a href="setup.html">Instructions on getting your cluster ready for the
-  workshop. </a>
+  <a href="setup.html">Instructions to set up the required software on Linux, Windows and Mac laptops and OSG sign up information. </a>
 </p>
 <hr/> 
 
