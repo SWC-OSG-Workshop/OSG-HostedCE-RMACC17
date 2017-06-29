@@ -137,8 +137,7 @@ Read the output file. It should be something like this:
 ### View OSG Accounting information
 
 In your web browser go to the OSG 
-[https://gracc.opensciencegrid.org/dashboard/db/payload-jobs-summary?orgId=1](accounting
-site) and click on the facility dropdown.  Either scroll down and select your
+[accounting site](https://gracc.opensciencegrid.org/dashboard/db/payload-jobs-summary?orgId=1) and click on the facility dropdown.  Either scroll down and select your
 site name (that we will provide) or type your site name.  You should the plots
 should update and show jobs have run on your site.
 
