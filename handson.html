@@ -1,0 +1,176 @@
+---
+layout: workshop
+root: .
+venue: High-Throughput Computation on the Open Science Grid and AWS, PEARC17
+address: New Orleans, LA
+country: United States
+humandate: July 10, 2017
+humantime: 1:30 pm - 5:00 pm
+startdate: July-10-2017
+enddate: July-10-2017
+latlng: 29.951004, -90.076974
+registration: https://www.pearc.org/schedule
+instructor: ["Rob Garder, Suchandra Thapa"]
+helper: ["To be described"]
+
+contact: user-support@opensciencegrid.org
+---
+
+
+<!--
+    Edit the values in the parameter block above to be appropriate for your bootcamp.
+-->
+
+<!--
+Practice and Experience in Advanced Research Computing 2017 (PEARC17) July 9-13, 2017 New Orleans, LA
+    This block includes the Eventbrite registration widget if 'eventbrite' has been set in the header.
+-->
+<!--
+{% if page.eventbrite %}
+<iframe src="//www.eventbrite.com/tickets-external?eid={{page.eventbrite}}&ref=etckt" frameborder="0" width="100%" scrolling="auto"></iframe>
+{% endif %}
+-->
+
+<h2>General Information</h2>
+
+Enabling campus researchers to share computational and data resources with
+external collaborators is a powerful multiplier in advancing science. Sharing
+spare capacity for even short durations allows an institutional HPC resource a
+cost-efficient means of participating in a larger cyber ecosystem. In this
+session we will show you how to integrate your HPC cluster resource to the Open
+Science Grid to support collaborative, multi-institutional science. The only
+requirements are that your cluster can provide SSH access to a single OSG staff
+member, that your cluster job submission and worker nodes have outbound IP
+connectivity, the operating system is CentOS/RHEL 6.x, 7.x or similar, and that
+a common batch scheduler is used (e.g. SLURM, PBS, HTCondor). During the
+tutorial we will configure OSG managed services to deliver workloads from
+science communities using the OSG to your HPC cluster.
+
+</p>
+  
+<!-- This block displays the instructors' names if they are available. -->
+{% if page.instructor %}
+<p>
+  <strong>Instructors:</strong>
+  {{page.instructor | join: ', ' %}}
+</p>
+{% endif %}
+
+<!-- This block displays the helpers' names if they are available. -->
+<!--
+{% if page.helper %}
+<p>
+  <strong>Helpers:</strong>
+  {{page.helper | join: ', ' %}}
+</p>
+{% endif %}
+-->
+
+<!--
+    Modify this block to reflect the target audience for your bootcamp.
+    In particular, if it is only open to people from a particular institution,
+    or if specialized prerequisite knowledge is required, please mention that.
+-->
+<!--
+<p>
+  <strong>Who:</strong>
+  The course is aimed at graduate students, post-doctoral researchers and other researchers.
+</p>
+-->
+<!--
+    This block displays the address and links to a map showing directions.
+-->
+<!--
+{% if page.latlng %}
+<p>
+  <strong>Where:</strong>
+  {{ page.address }}.
+  Get directions with
+  <a href="//www.openstreetmap.org/?mlat={{ page.latlng | replace:',','&mlon=' }}&zoom=16">OpenStreetMap</a>
+  or
+  <a href="//maps.google.com/maps?q={{ page.latlng }}">Google Maps</a>.
+</p>
+{% endif %}
+-->
+
+<!--
+    Modify the block below if there are any special requirements.
+-->
+<p>
+  <strong>Requirements:</strong>
+  Participants must bring a laptop with a few specific software packages installed
+  (see <a href="setup.html">Setup</a>).
+</p>
+
+<!--
+    This block automatically inserts a contact email address if one has been specified for the page.
+    If one hasn't, this block inserts the generic contact address for Software Carpentry.
+-->
+<p>
+  <strong>Contact</strong>:
+  Please mail
+  {% if page.contact %}
+    <a href='mailto:{{page.contact}}'>{{page.contact}}</a>
+  {% else %}
+    <a href='mailto:{{site.contact}}'>{{site.contact}}</a>
+  {% endif %}
+  for more information.
+</p>
+
+<hr/>
+
+{% if page.registration %}
+<h2>Registration</h2>
+<p>
+Space is limited for the event. To register,  please <a href="{{page.registration}}"> visit here </a>.
+</p>
+{% endif %}
+<hr/>
+
+<h2>Schedule</h2>
+<h2> </h2>
+<div class="row-fluid">
+    <h4> High-Throughput Computation on the Open Science Grid and AWS </h4>
+    <h4> July 10th, 1:30 PM - 5:00 PM </h4>
+    <h5>Location: TBD </h5>
+    <h5>Instructors: TBD</h5>
+     <h3> </h3>
+    <table class="table table-striped">
+      <tr> <td>1:30 - 1:45 </td> <td> <a href=""> Quick overview of the OSG
+      infrastructure and tutorial goals</a> </td> </tr>
+      <tr> <td>1:45 - 2:00 </td> <td><a href="">Trust model and security
+      assesment of the hosted compute element</a></td> </tr>
+      <tr> <td>2:00 - 2:30 </td> <td>Demonstration </td> </tr>
+      <tr> <td>2:30 - 2:45</td> <td><em>Coffee break</em></td> </tr>
+      <tr> <td>2:45 - 4:45 </td> <td><a href="handson.html">Hands-on session</a></td></td></td></tr>
+      <tr> <td>4:45 - 5:00</td> <td>Wrap up and Next Steps</td> </tr>
+    </table>
+  </div>
+<hr/>
+
+
+
+<!--
+    Edit this block to show what topics will be covered.
+-->
+
+<h2>Setup Instructions </h2>
+<p>
+  <a href="setup.html">Instructions on getting your cluster ready for the
+  workshop. </a>
+</p>
+<hr/> 
+
+<!--
+<h2>Feedback</h2>
+<p>
+  <a href="https://docs.google.com/forms/d/1kJJ0QGsY_Aqpn1rdN5Ng8KuBoL5lpmjFXQcFS3SMKwo/edit">Feedback for the workshop</a>. 
+</p>
+<hr/>
+-->
+
+
+<!--
+    Edit the setup instructions in _includes/setup.html to reflect your bootcamp.
+    (In particular, most bootcamps teach either Python or R, not both.)
+-->
