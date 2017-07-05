@@ -19,7 +19,7 @@ this to setup the necessary infrastructure and configure it.
 
 ### Setting up access to your cluster
 
-If you haven't already, you'll need to create an user account on your cluster
+Now you'll need to create an user account on your cluster
 that will be used to submit OSG jobs.  This account can be a regular user
 account.  
 
@@ -54,11 +54,12 @@ $ cd ~/tutorial-quickstart # relevant script and input files are inside this
 directory
 ~~~
 
-We will look at the submit file in detail: tutorial01.submit
+We will need to modify the submit file `tutorial01.submit` to just send jobs to
+your cluster through the OSG job scheduling system.
 
 #### HTCondor submit file
 
-So far, so good! Let's look at a the submit file `tutorial01.submit`
+Let's look at a the submit file `tutorial01.submit`
 
     # The UNIVERSE defines an execution environment. You will almost always use VANILLA.
     Universe = vanilla
@@ -147,7 +148,7 @@ accounting information to be recorded in the OSG accounting information.
 Then in your web browser go to the OSG 
 [accounting site](https://gracc.opensciencegrid.org/dashboard/db/payload-jobs-summary?orgId=1) 
 and click on the facility dropdown.  Either scroll down and select your site
-name (that we will provide) or type your site name.  You should the plots should
+name (that we will provide) or type your cluster name.  The plots on the psageshould
 update and show jobs have run on your site.
 
 <div class="keypoints" markdown="1">
