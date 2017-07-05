@@ -43,9 +43,9 @@ us to use.
 Once the OSG user is setup, please let us know and we'll send you an SSH public
 key to install in the user's home directory. On normal systems, this key should
 be pasted into `~<osg-user-name>/.ssh/authorized_keys`, where <osg-user-name> is
-the username you selected for the OSG user, without the brackets. Typically, the
-`.ssh` directory should have permissions of 700 (rwx------) and the
-`authorized_keys` file should have permissions of 644 (rw-r--r--). The key
+the username you selected for the OSG user, without the brackets. Typically,
+the `.ssh` directory should have permissions of `700 (rwx------)` and
+the `authorized_keys` file should have permissions of `644 (rw-r--r--)`. The key
 should *not* contain line breaks.
 
 
