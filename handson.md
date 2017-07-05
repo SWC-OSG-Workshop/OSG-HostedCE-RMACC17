@@ -24,11 +24,11 @@ that will be used to submit OSG jobs.  This account can be a regular user
 account.  
 
 ## Setting up SSH access and getting OSG cluster names
-Once an SSH account is setup on your cluster, we'll give you an ssh pub key
-to install in the `~/.ssh/authorized_keys` file for that account.  The file
-should have permissions of 644 and the `~/.ssh` file should have permissions of
-700.  Incorrect permissions can result in SSH refusing allow access using the
-supplied public key.
+Once an SSH account is setup on your cluster, we'll give you an ssh pub key to
+install in the `~/.ssh/authorized_keys` file for that account.  The file should
+have permissions of 644 and the `~/.ssh` file should have permissions of 700.
+Incorrect permissions can result in SSH refusing allow access using the supplied
+public key.
 
 In addition, we'll also provide the cluster name that we'll use to refer to your
 cluster in the OSG infrastructure.  You'll need to use this in the later
@@ -39,7 +39,7 @@ sections of this tutorial.
 ## Testing Integration from OSG to your HPC cluster
 ### Login to submit node 
 
-Once the hosted infrastructure is setup, log in to the submit node:
+Once we've told you that the hosted infrastructure is setup, log in to the submit node:
 {:class="in"}
 
 ~~~
