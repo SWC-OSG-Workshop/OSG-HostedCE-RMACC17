@@ -62,3 +62,39 @@ information about your "site name" within the accounting system. If you click
 the "Facility" dropdown, you should be able to type this site name in and see
 job information such as wall hours arranged by field of science, organization,
 project etc.
+
+
+### Optional Installations to Maximize Your OSG Contribution
+
+#### OASIS Many users of the Open Science Grid depend on the "OSG Application
+Software Installation Service", or OASIS. 
+
+OASIS relies on CVMFS - an HTTP-based, FUSE filesystem for distributing
+software and data. In order to support OASIS, the OASIS tools must be installed
+on all worker nodes. Additionally, all workers need to the FUSE module enabled
+in their OS kernel. FUSE is enabled by default in Red Hat variants.
+
+For more information, see
+[here](https://twiki.grid.iu.edu/bin/view/Documentation/Release3/UpdateOasis)
+
+#### Singularity To easily distribute scientific software, many users are now
+turning to containerization technologies. On the Open Science Grid, a large
+number of facilities now support a lightweight containerization technology
+called Singularity. Singularity contains a single setuid (root-privileged)
+binary and no long-running services, making it ideal for running containerized
+workloads on HPC clusters.
+
+For sites running Red Hat variants, the Open Science Grid provides Singularity
+RPMs in the OSG repository. On EL7:
+
+```bash 
+rpm -Uhv https://repo.grid.iu.edu/osg/3.4/osg-3.4-el7-release-latest.rpm 
+yum install singularity 
+```
+
+And for EL6:
+
+```bash
+rpm -Uhv https://repo.grid.iu.edu/osg/3.4/osg-3.4-el6-release-latest.rpm
+yum install singularity 
+```
