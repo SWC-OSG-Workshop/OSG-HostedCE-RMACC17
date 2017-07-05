@@ -1,7 +1,7 @@
 ---
 layout: lesson
 root: .
-title: Enabling Science Beyond the Campus Edge: HPC Integration with the Open Science Grid
+title: Hands on session
 
 ---
 <div class="objectives" markdown="1">
