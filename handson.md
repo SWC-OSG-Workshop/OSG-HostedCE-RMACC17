@@ -11,19 +11,19 @@ title: Hands on session
 * Be able to view the jobs run on cluster using the OSG's GRACC system
 </div>
 
-## HPC Cluster survey
+### HPC Cluster survey
 
 If you haven't already, fill out the <a
 href="https://goo.gl/forms/8OukxsyG6KBSGHuR2">HPC cluster questionnaire</a>. We'll use
 this to setup the necessary infrastructure and configure it.
 
-## Setting up access to your cluster
+### Setting up access to your cluster
 
 If you haven't already, you'll need to create an user account on your cluster
 that will be used to submit OSG jobs.  This account can be a regular user
 account.  
 
-## Setting up SSH access and getting OSG cluster names
+### Setting up SSH access and getting OSG cluster names
 Once an SSH account is setup on your cluster, we'll give you an ssh pub key to
 install in the `~/.ssh/authorized_keys` file for that account.  The file should
 have permissions of 644 and the `~/.ssh` file should have permissions of 700.
@@ -36,8 +36,8 @@ sections of this tutorial.
 
 
 
-## Testing Integration from OSG to your HPC cluster
-### Login to submit node 
+### Testing Integration from OSG to your HPC cluster
+#### Login to submit node 
 
 Once we've told you that the hosted infrastructure is setup, log in to the submit node:
 {:class="in"}
@@ -56,7 +56,7 @@ directory
 
 We will look at the submit file in detail: tutorial01.submit
 
-### HTCondor submit file
+#### HTCondor submit file
 
 So far, so good! Let's look at a the submit file `tutorial01.submit`
 
@@ -92,7 +92,7 @@ Here you'll need to replace the ```[CLUSTER_NAME]``` in the requirements line
 with the name that we provide to you.  This will restrict the job to only run on
 your cluster.  
 
-### Submit the job 
+#### Submit the job 
 
 Submit the job using `condor_submit`:
 
@@ -100,7 +100,7 @@ Submit the job using `condor_submit`:
 	Submitting job(s). 
 	20 job(s) submitted to cluster 823.
 
-### Check the job status
+#### Check the job status
 
 The `condor_q` command tells the status of currently running jobs.
 
@@ -119,7 +119,7 @@ Run `condor_q` with the watch command to view the status of your jobs until it
 completes (the job will be in the C state or will no longer appear in the
 `condor_q` output).  Hit `Ctrl-C` to return to the command line.
 
-### Check the job output
+#### Check the job output
 
 Once your job submission has finished, you can look at the files that HTCondor has
 returned to the working directory. If everything was successful, it
@@ -140,7 +140,7 @@ Read the output file. It should be something like this:
 	Et voila!
 
 
-## View OSG Accounting information
+### View OSG Accounting information
 
 After your job has run, you'll need to wait about 15-20 minutes for the
 accounting information to be recorded in the OSG accounting information.
