@@ -1,7 +1,7 @@
 ---
 layout: lesson
 root: .
-title:  HPC integration demonstration
+title:  OSG / HPC resource integration demonstration
 
 ---
 <div class="objectives" markdown="1">
@@ -14,9 +14,24 @@ title:  HPC integration demonstration
 
 ## Introduction
 
+This page will briefly outline the steps HPC resource admins and OSG staff will
+need to take in order to integration a HPC resource into the OSG infrastructure.
+
 ## Steps taken on a HPC resource being integrated
+   * Create new user on HPC resource that will be used to submit OSG jobs
+   * Add ssh public key provided by OSG staff
+
 ## Steps taken by OSG staff
+   * Configure hosted OSG software with HPC resource specifics
+   * Generate ssh key to be used to login to HPC resource
+   * Log in to HPC resource and setup OSG software in user account
+   * Add HPC resource information to OSG information and job management systems
+   * Test and validation job submission and execution through OSG systems
+
 ## Getting information on jobs run on HPC resource
+   * Visit (OSG accounting site)[https://gracc.opensciencegrid.org/dashboard/db/payload-jobs-summary?orgId=1]
+   * Select appropriate time range 
+   * Select correct facility name
 
 <div class="keypoints" markdown="1">
 #### Key Points
