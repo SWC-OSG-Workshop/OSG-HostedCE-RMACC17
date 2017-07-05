@@ -1,4 +1,9 @@
---- layout: lesson root: .  title: Hands on session
+---
+layout: lesson
+root: .
+title: Hands on session
+
+---
 
 ### Background & Requirements
 
