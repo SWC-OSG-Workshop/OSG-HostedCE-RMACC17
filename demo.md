@@ -32,6 +32,7 @@ need to take in order to integration a HPC resource into the OSG infrastructure.
    * Visit [OSG accounting site](https://gracc.opensciencegrid.org/dashboard/db/payload-jobs-summary?orgId=1)
    * Select appropriate time range 
    * Select correct facility name
+   * Information available includes projects, institutions, and fields of science using resource
 
 <div class="keypoints" markdown="1">
 #### Key Points
