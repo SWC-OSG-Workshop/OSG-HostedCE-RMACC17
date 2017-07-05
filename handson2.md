@@ -43,10 +43,10 @@ us to use.
 Once the OSG user is setup, please let us know and we'll send you an SSH public
 key to install in the user's home directory. On typical systems, this key
 should be pasted into `~[osg-user-name]/.ssh/authorized_keys`, where
-[osg-user-name] is the username you selected for the OSG user, without the
+`[osg-user-name]` is the username you selected for the OSG user, without the
 brackets. The key should *not* contain line breaks.
 
-You may need to verify that the .ssh directory and authorized_keys file
+You may need to verify that the `.ssh` directory and `authorized_keys` file
 have the correct permissions.
 
 
@@ -65,7 +65,7 @@ job information such as wall hours arranged by field of science, organization,
 project etc.
 
 
-### Optional Installations to Maximize Your OSG Contribution
+### Other Recommended Software
 
 #### OASIS
 
