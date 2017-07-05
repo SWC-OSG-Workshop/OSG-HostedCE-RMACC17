@@ -66,7 +66,8 @@ project etc.
 
 ### Optional Installations to Maximize Your OSG Contribution
 
-#### OASIS Many users of the Open Science Grid depend on the "OSG Application
+#### OASIS
+Many users of the Open Science Grid depend on the "OSG Application
 Software Installation Service", or OASIS. 
 
 OASIS relies on CVMFS - an HTTP-based, FUSE filesystem for distributing
@@ -77,7 +78,8 @@ in their OS kernel. FUSE is enabled by default in Red Hat variants.
 For more information, see
 [here](https://twiki.grid.iu.edu/bin/view/Documentation/Release3/UpdateOasis)
 
-#### Singularity To easily distribute scientific software, many users are now
+#### Singularity
+To easily distribute scientific software, many users are now
 turning to containerization technologies. On the Open Science Grid, a large
 number of facilities now support a lightweight containerization technology
 called Singularity. Singularity contains a single setuid (root-privileged)
