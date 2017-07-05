@@ -162,8 +162,8 @@ should update and show jobs have run on your site.
 <div class="keypoints" markdown="1">
 
 #### Key Points
-* OSG can schedule jobs to HPC resources
-* Adding new resources is a fairly painless process
+* HPC admins just need to add a regular user account and setup ssh pub key
+* OSG job information for integrated HPC resources can be viewed using GRACC
 
 
 </div>
