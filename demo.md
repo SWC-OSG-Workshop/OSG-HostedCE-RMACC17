@@ -29,7 +29,7 @@ need to take in order to integration a HPC resource into the OSG infrastructure.
    * Test and validation job submission and execution through OSG systems
 
 ## Getting information on jobs run on HPC resource
-   * Visit (OSG accounting site)[https://gracc.opensciencegrid.org/dashboard/db/payload-jobs-summary?orgId=1]
+   * Visit [OSG accounting site](https://gracc.opensciencegrid.org/dashboard/db/payload-jobs-summary?orgId=1)
    * Select appropriate time range 
    * Select correct facility name
 
