@@ -8,9 +8,9 @@ title: Hands on session
 ### Background & Requirements
 
 The Open Science Grid team is pleased to offer a new solution, "Hosted Compute
-Elements" (or Hosted CE), for connecting HPC clusters to the OSG via SSH. In
-this hands-on session, we'll walk you through the simple steps for adding a new
-cluster to OSG. 
+Elements"), for connecting HPC clusters to the OSG via SSH. In this hands-on
+session, we'll walk you through the simple steps for adding a new cluster to
+OSG. 
 
 In order to participate, you'll need a cluster that meets a few basic
 requirements:
@@ -41,13 +41,13 @@ username as specified there. Otherwise, let us know what username you would like
 us to use.
 
 Once the OSG user is setup, please let us know and we'll send you an SSH public
-key to install in the user's home directory. On normal systems, this key should
-be pasted into `~<osg-user-name>/.ssh/authorized_keys`, where <osg-user-name> is
-the username you selected for the OSG user, without the brackets. Typically,
-the `.ssh` directory should have permissions of `700 (rwx------)` and
-the `authorized_keys` file should have permissions of `644 (rw-r--r--)`. The key
-should *not* contain line breaks.
+key to install in the user's home directory. On typical systems, this key
+should be pasted into `~<osg-user-name>/.ssh/authorized_keys`, where
+<osg-user-name> is the username you selected for the OSG user, without the
+brackets. The key should *not* contain line breaks.
 
+You may need to verify that the `.ssh` directory and `authorized_keys` file
+have the correct permissions.
 
 ### Viewing Your Contribution to OSG
 
