@@ -41,7 +41,7 @@ sections of this tutorial.
 
 
 <h3>Testing Integration from OSG to your HPC cluster</h3>
-<h2>Login to submit node </h2>
+<h4>Login to submit node </h4>
 
 Once the hosted infrastructure is setup, log in to the submit  node:
 {:class="in"}
@@ -62,7 +62,7 @@ directory
 
 We will look at the submit file in detail: tutorial01.submit
 
-### HTCondor submit file
+#### HTCondor submit file
 
 So far, so good! Let's look at a the submit file `tutorial01.submit`
 
@@ -97,7 +97,7 @@ So far, so good! Let's look at a the submit file `tutorial01.submit`
 Here you'll need to replace the ```[CLUSTER_NAME]``` in the requirements line
 with the name that we provide to you.
 
-### Submit the job 
+#### Submit the job 
 
 Submit the job using `condor_submit`:
 
@@ -105,7 +105,7 @@ Submit the job using `condor_submit`:
 	Submitting job(s). 
 	1 job(s) submitted to cluster 823.
 
-### Check the job status
+#### Check the job status
 
 The `condor_q` command tells the status of currently running jobs.
 Generally you will want to limit it to your own jobs: 
@@ -130,7 +130,7 @@ have state `R` (running). If it has completed already, it will not appear
 in `condor_q`. 
 
 
-### Check the job output
+#### Check the job output
 
 Once your job has finished, you can look at the files that HTCondor has
 returned to the working directory. If everything was successful, it
