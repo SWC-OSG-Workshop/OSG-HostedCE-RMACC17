@@ -15,9 +15,9 @@ OSG.
 In order to participate, you'll need a cluster that meets a few basic
 requirements:
 
-    - A supported batch system (SLURM, PBS, HTCondor, LSF, UGE) 
-    - Batch system submit nodes accessible via the public internet, with SSH key-based authentication enabled
-    - Outbound networking from the worker nodes (NAT is OK)
+- A supported batch system (SLURM, PBS, HTCondor, LSF, UGE) 
+- Batch system submit nodes accessible via the public internet, with SSH key-based authentication enabled
+- Outbound networking from the worker nodes (NAT is OK)
 
 ### HPC Cluster Questionnaire
 
