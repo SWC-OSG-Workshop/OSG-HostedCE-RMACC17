@@ -8,8 +8,8 @@ title: Hands on session
 ### Background & Requirements
 
 The Open Science Grid team is pleased to offer a new solution, "Hosted Compute
-Elements" (or HostedCE), for connecting HPC clusters to the OSG via SSH. In this
-hands-on session, we'll walk you through the simple steps for adding a new
+Elements" (or Hosted CE), for connecting HPC clusters to the OSG via SSH. In
+this hands-on session, we'll walk you through the simple steps for adding a new
 cluster to OSG. 
 
 In order to participate, you'll need a cluster that meets a few basic
