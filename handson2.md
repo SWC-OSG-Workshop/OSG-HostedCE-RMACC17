@@ -50,6 +50,8 @@ brackets. The key should *not* contain line breaks.
 You may need to verify that the `.ssh` directory and `authorized_keys` file
 have the correct permissions.
 
+Once the OSG team has validated that we can log in and submit jobs, sit back
+and relax while we configure your site!
 
 ### Viewing Your Contribution to OSG
 
