@@ -98,3 +98,5 @@ And for EL6:
 rpm -Uhv https://repo.grid.iu.edu/osg/3.4/osg-3.4-el6-release-latest.rpm
 yum install singularity 
 ```
+
+For more information, see [here](http://singularity.lbl.gov/)
