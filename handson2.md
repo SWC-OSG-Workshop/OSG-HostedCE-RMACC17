@@ -8,7 +8,7 @@ title: Hands on session
 ### Background & Requirements
 
 The Open Science Grid team is pleased to offer a new solution, "Hosted Compute
-Elements"), for connecting HPC clusters to the OSG via SSH. In this hands-on
+Elements", for connecting HPC clusters to the OSG via SSH. In this hands-on
 session, we'll walk you through the simple steps for adding a new cluster to
 OSG. 
 
