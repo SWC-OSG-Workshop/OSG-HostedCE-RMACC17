@@ -46,8 +46,9 @@ should be pasted into `~<osg-user-name>/.ssh/authorized_keys`, where
 <osg-user-name> is the username you selected for the OSG user, without the
 brackets. The key should *not* contain line breaks.
 
-You may need to verify that the `.ssh` directory and `authorized_keys` file
+You may need to verify that the .ssh directory and authorized_keys file
 have the correct permissions.
+
 
 ### Viewing Your Contribution to OSG
 
@@ -67,6 +68,7 @@ project etc.
 ### Optional Installations to Maximize Your OSG Contribution
 
 #### OASIS
+
 Many users of the Open Science Grid depend on the "OSG Application
 Software Installation Service", or OASIS. 
 
@@ -79,6 +81,7 @@ For more information, see
 [here](https://twiki.grid.iu.edu/bin/view/Documentation/Release3/UpdateOasis)
 
 #### Singularity
+
 To easily distribute scientific software, many users are now
 turning to containerization technologies. On the Open Science Grid, a large
 number of facilities now support a lightweight containerization technology
