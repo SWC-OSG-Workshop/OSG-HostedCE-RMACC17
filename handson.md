@@ -8,21 +8,39 @@ title: Hands on session
 
 #### Objectives
 * Have jobs running on your HPC cluster by end of workshop 
-* Be able to view the jobs run on cluster using the OSG accounting tool
+* Be able to view the jobs run on cluster using the OSG's GRACC system
 </div>
 
 <h2>HPC Cluster survey</h2>
 
+<p>
 If you haven't already, fill out the <a
-href="https://goo.gl/forms/8OukxsyG6KBSGHuR2">HPC cluster survey</a>. We'll use
+href="https://goo.gl/forms/8OukxsyG6KBSGHuR2">HPC cluster questionnaire</a>. We'll use
 this to setup the necessary infrastructure and configure it.
+</p>
 
 <h2>Setting up access to your cluster</h2>
 
+<p>
 If you haven't already, you'll need to create an user account on your cluster
 that will be used to submit OSG jobs.  This account can be a regular user
 account.  
+</p>
 
+<h2>Setting up SSH access and getting OSG cluster names</h2>
+<p>Once an SSH account is setup on your cluster, we'll give you an ssh pub key
+to install in the `~/.ssh/authorized_keys` file for that account.  The file
+should have permissions of 644 and the `~/.ssh` file should have permissions of
+700.  Incorrect permissions can result in SSH refusing allow access using the
+supplied public key.
+
+In addition, we'll also provide the cluster name that we'll use to refer to your
+cluster in the OSG infrastructure.  You'll need to use this in the later
+sections of this tutorial. 
+</p>
+
+
+<h3>Testing Integration from OSG to your HPC cluster</h3>
 <h2>Login to submit node </h2>
 
 Once the hosted infrastructure is setup, log in to the submit  node:
