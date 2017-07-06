@@ -6,6 +6,7 @@ title:  Campus HPC resource integration with the OSG: demonstration
 ---
 
 <div class="objectives" markdown="1">
+
 #### Objectives
 * Show the steps needed to integrate a HPC cluster with OSG's job scheduling
 * Demonstrate what occurs with login accounts as OSG staff integrate an HPC resource
