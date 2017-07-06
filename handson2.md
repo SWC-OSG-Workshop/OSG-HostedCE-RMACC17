@@ -56,7 +56,7 @@ and relax while we configure your site!
 ### Viewing Your Contribution to OSG
 
 The OSG maintains detailed accounting information and traceability for any
-end-user workload that has run on your cluster. Within 15-20 minutes of OSG jobs
+end-user workload that has run on your cluster. Within 15-20 minutes of OSG 
 submitting jobs to your cluster via SSH, you should be able to see this
 information reflected
 [here](https://gracc.opensciencegrid.org/dashboard/db/payload-jobs-summary?orgId=1).
