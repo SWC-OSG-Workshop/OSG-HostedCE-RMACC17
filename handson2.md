@@ -90,7 +90,7 @@ a virtual machine (or physical hardware) with:
 - Ports 3128/tcp and 3401/udp open in your firewall, if necessary.
 
 We will assume EL6 for the rest of the document. These instructions should also
-work for EL6, but you will need to adjust the RPMs appropriately (e.g.,
+work for EL7, but you will need to adjust the RPMs appropriately (e.g.,
 osg-3.4-el6-release-latest.rpm becomes osg-3.4-el7-release-latest.rpm)
 
 First, you will need to install EPEL and the OSG repositories if you have not
