@@ -98,7 +98,7 @@ already:
 ```bash
 # yum install epel-release
 # yum install yum-plugins-priorities
-# yum install https://repo.grid.iu.edu/osg/3.4/osg-3.4-el7-release-latest.rpm
+# yum install https://repo.grid.iu.edu/osg/3.4/osg-3.4-el6-release-latest.rpm
 ```    
 
 Once complete, you'll need to install the Squid software, enable, and start it:
