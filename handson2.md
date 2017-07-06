@@ -180,8 +180,8 @@ If you see output similar to the above, you're all set!
 
 For more information or troubleshooting, please see:
 
-[1] https://twiki.grid.iu.edu/bin/view/Documentation/Release3/InstallFrontierSquid
-[2] https://twiki.opensciencegrid.org/bin/view/Documentation/Release3/InstallCvmfs
+[https://twiki.grid.iu.edu/bin/view/Documentation/Release3/InstallFrontierSquid](https://twiki.grid.iu.edu/bin/view/Documentation/Release3/InstallFrontierSquid)
+[https://twiki.opensciencegrid.org/bin/view/Documentation/Release3/InstallCvmfs](https://twiki.opensciencegrid.org/bin/view/Documentation/Release3/InstallCvmfs)
 
 
 
