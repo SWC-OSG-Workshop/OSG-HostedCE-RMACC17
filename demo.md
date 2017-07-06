@@ -10,8 +10,8 @@ title: Campus HPC resource integration with the OSG demonstration
 We briefly outline the process for integrating a campus HPC cluster with the OSG high throughput ecosystem.
 
 ## Steps taken by the campus HPC resource administrator
-   * Create new user account on HPC resource that will be used to submit OSG jobs
-   * Add SSH public key provided by OSG staff
+   * Create new user account on the campus HPC resource that will be used to submit OSG jobs
+   * Add the SSH public key provided by OSG staff
    * Communicate to OSG staff when user account is ready to go
 
 ## Steps taken by OSG staff
@@ -24,6 +24,6 @@ We briefly outline the process for integrating a campus HPC cluster with the OSG
 ## Viewing campus HPC resource contributions
    * Visit the [OSG accounting site](https://gracc.opensciencegrid.org/dashboard/db/payload-jobs-summary?orgId=1)
    * Select an appropriate time range 
-   * Select the facility name of the HPC cluster
-   * Information available includes projects, institutions, and fields of science using resource
+   * Select the facility name of the campus HPC cluster
+   * Information available includes CPU-hours consumed by different projects, user institutional affiliations, and fields of science
 
