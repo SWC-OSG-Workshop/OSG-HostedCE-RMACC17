@@ -77,11 +77,113 @@ Software Installation Service", or OASIS.
 
 OASIS relies on CVMFS - an HTTP-based, FUSE filesystem for distributing
 software and data. In order to support OASIS, the OASIS tools must be installed
-on all worker nodes. Additionally, all workers need to the FUSE module enabled
-in their OS kernel. FUSE is enabled by default in Red Hat variants.
+on all worker nodes, and AutoFS must be available. Additionally, all workers
+need to the FUSE module enabled in their OS kernel. FUSE is enabled by default
+in Red Hat variants.
 
-For more information, see
-[here](https://twiki.grid.iu.edu/bin/view/Documentation/Release3/UpdateOasis)
+For performance, OASIS utilizes caching where-ever possible. In order to deploy
+OASIS at your site, you will first need a Squid server. We recommend installing
+a virtual machine (or physical hardware) with:
+
+- Enterprise Linux 6 or 7 (Red Hat, Scientific, CentOS or other variants)
+- At least 2 CPUs, 4GB RAM, and 100GB disk
+- Ports 3128/tcp and 3401/udp open in your firewall, if necessary.
+
+We will assume EL6 for the rest of the document. These instructions should also
+work for EL6, but you will need to adjust the RPMs appropriately (e.g.,
+osg-3.4-el6-release-latest.rpm becomes osg-3.4-el7-release-latest.rpm)
+
+First, you will need to install EPEL and the OSG repositories if you have not
+already:
+```bash
+# yum install epel-release
+# yum install yum-plugins-priorities
+# yum install https://repo.grid.iu.edu/osg/3.4/osg-3.4-el7-release-latest.rpm
+```    
+
+Once complete, you'll need to install the Squid software, enable, and start it:
+```bash
+# yum install frontier-squid
+# chkconfig frontier-squid on
+# service frontier-squid start
+```
+
+To test that Squid is working properly, you can try the following:
+```bash
+$ export http_proxy=http://yoursquid.your.domain:3128
+$ wget -qdO/dev/null http://frontier.cern.ch 2>&1|grep X-Cache
+X-Cache: MISS from yoursquid.your.domain
+$ wget -qdO/dev/null http://frontier.cern.ch 2>&1|grep X-Cache
+X-Cache: HIT from yoursquid.your.domain
+```
+
+where "yoursquid.your.domain" is the fully-qualified domain name of your Squid
+server.
+
+Once working, please forward this information to us at
+user-support@opensciencegrid.org, so that we may adjust the job submission
+software to take advantage of this cache.
+
+To set up access to the OASIS filesystem, you'll need to install EPEL and the
+OSG repositories to your worker nodes, as before:
+```bash
+# yum install epel-release
+# yum install yum-plugins-priorities
+# yum install https://repo.grid.iu.edu/osg/3.4/osg-3.4-el6-release-latest.rpm
+```
+
+And finally the OASIS software:
+```bash
+# yum install osg-oasis
+```
+
+To configure OASIS, first create or edit `/etc/fuse.conf` and add the following:
+```
+user_allow_other
+```
+
+Then, add the CVMFS path to `/etc/auto.master`:
+```
+/cvmfs /etc/auto.cvmfs
+```
+
+AutoFS will need to be started or restarted after this. 
+```
+service autofs restart
+```
+
+You will need to configure CVMFS such that it downloads files through your
+Squid cache set up in the previous section. You will also need to set a maximum
+quota for the worker's local CVMFS cache. Create the file
+`/etc/cvmfs/default.local` and add the following:
+```
+CVMFS_REPOSITORIES="`echo $((echo oasis.opensciencegrid.org;echo cms.cern.ch;ls /cvmfs)|sort -u)|tr ' ' ,`"
+CVMFS_QUOTA_LIMIT=20000
+CVMFS_HTTP_PROXY="http://yoursquid.your.domain:3128"
+```
+
+where `yoursquid.your.domain` is the fully qualified domain name of your Squid
+service. We assume a cache of 20000 MB -- please adjust this value as you see
+fit.
+
+To test CVMFS, try listing the contents of the OASIS server:
+```
+$ ls /cvmfs/oasis.opensciencegrid.org
+atlas       csiu         geant4    gm2      ligo           nanohub          sbgrid
+auger       current   glastorg  icecube  lsst           nova         snoplussnolabca
+belle       enmr         glow      ilc      microboone  osg          uc3
+cmssoft  fermilab  gluex     lbne     mis            osg-software     wastebin
+```
+
+If you see output similar to the above, you're all set!
+
+
+For more information or troubleshooting, please see:
+
+[1] https://twiki.grid.iu.edu/bin/view/Documentation/Release3/InstallFrontierSquid
+[2] https://twiki.opensciencegrid.org/bin/view/Documentation/Release3/InstallCvmfs
+
+
 
 #### Singularity
 
@@ -96,15 +198,15 @@ For sites running Red Hat variants, the Open Science Grid provides Singularity
 RPMs in the OSG repository. On EL7:
 
 ```bash 
-rpm -Uhv https://repo.grid.iu.edu/osg/3.4/osg-3.4-el7-release-latest.rpm 
-yum install singularity 
+# rpm -Uhv https://repo.grid.iu.edu/osg/3.4/osg-3.4-el7-release-latest.rpm 
+# yum install singularity 
 ```
 
 And for EL6:
 
 ```bash
-rpm -Uhv https://repo.grid.iu.edu/osg/3.4/osg-3.4-el6-release-latest.rpm
-yum install singularity 
+# rpm -Uhv https://repo.grid.iu.edu/osg/3.4/osg-3.4-el6-release-latest.rpm
+# yum install singularity 
 ```
 
 For more information, see [here](http://singularity.lbl.gov/)
