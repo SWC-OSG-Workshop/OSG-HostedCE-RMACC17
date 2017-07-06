@@ -130,7 +130,7 @@ In addition, you may want to customize your Squid configuration.  To do this,
 you'll need to modify `/etc/squid/customize.sh` and make the appropriate changes
 there. [This link](https://twiki.cern.ch/twiki/bin/view/Frontier/InstallSquid#Configuration)
 has information on customizing the most important parameters (cache sizes and
-machines allowed to use squid). 
+machines allowed to use Squid). 
 
 To set up access to the OASIS filesystem, you'll need to install EPEL and the
 OSG repositories to your worker nodes, as before:
@@ -188,8 +188,8 @@ If you see output similar to the above, you're all set!
 
 For more information or troubleshooting, please see:
 
-[https://twiki.grid.iu.edu/bin/view/Documentation/Release3/InstallFrontierSquid](https://twiki.grid.iu.edu/bin/view/Documentation/Release3/InstallFrontierSquid)
-[https://twiki.opensciencegrid.org/bin/view/Documentation/Release3/InstallCvmfs](https://twiki.opensciencegrid.org/bin/view/Documentation/Release3/InstallCvmfs)
+* [https://twiki.grid.iu.edu/bin/view/Documentation/Release3/InstallFrontierSquid](https://twiki.grid.iu.edu/bin/view/Documentation/Release3/InstallFrontierSquid)
+* [https://twiki.opensciencegrid.org/bin/view/Documentation/Release3/InstallCvmfs](https://twiki.opensciencegrid.org/bin/view/Documentation/Release3/InstallCvmfs)
 
 
 
@@ -203,17 +203,17 @@ binary and no long-running services, making it ideal for running containerized
 workloads on HPC clusters.
 
 For sites running Red Hat variants, the Open Science Grid provides Singularity
-RPMs in the OSG repository. On EL7:
-
-```bash 
-# rpm -Uhv https://repo.grid.iu.edu/osg/3.4/osg-3.4-el7-release-latest.rpm 
-# yum install singularity 
-```
-
-And for EL6:
+RPMs in the OSG repository. On EL6:
 
 ```bash
 # rpm -Uhv https://repo.grid.iu.edu/osg/3.4/osg-3.4-el6-release-latest.rpm
+# yum install singularity 
+```
+
+And for EL7:
+
+```bash 
+# rpm -Uhv https://repo.grid.iu.edu/osg/3.4/osg-3.4-el7-release-latest.rpm 
 # yum install singularity 
 ```
 
