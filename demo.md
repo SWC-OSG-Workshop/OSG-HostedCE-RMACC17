@@ -1,7 +1,7 @@
 ---
 layout: lesson
 root: .
-title:  Campus HPC resource integration with the OSG: demonstration
+title: Campus HPC resource integration with the OSG: demonstration
 
 ---
 
