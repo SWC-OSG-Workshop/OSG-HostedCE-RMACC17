@@ -85,13 +85,15 @@ For performance, OASIS utilizes caching where-ever possible. In order to deploy
 OASIS at your site, you will first need a Squid server. We recommend installing
 a virtual machine (or physical hardware) with:
 
-- Enterprise Linux 6 or 7 (Red Hat, Scientific, CentOS or other variants)
+- Enterprise Linux 6 or 7 (Red Hat, Scientific Linux, CentOS or other variants)
 - At least 2 CPUs, 4GB RAM, and 100GB disk
 - Ports 3128/tcp and 3401/udp open in your firewall, if necessary.
 
 We will assume EL6 for the rest of the document. These instructions should also
 work for EL7, but you will need to adjust the RPMs appropriately (e.g.,
-osg-3.4-el6-release-latest.rpm becomes osg-3.4-el7-release-latest.rpm)
+osg-3.4-el6-release-latest.rpm becomes osg-3.4-el7-release-latest.rpm).
+Likewise, you'll need to replace the `chkconfig` and `service` commands with the
+systemd equivalents.
 
 First, you will need to install EPEL and the OSG repositories if you have not
 already:
@@ -123,6 +125,12 @@ server.
 Once working, please forward this information to us at
 user-support@opensciencegrid.org, so that we may adjust the job submission
 software to take advantage of this cache.
+
+In addition, you may want to customize your Squid configuration.  To do this,
+you'll need to modify `/etc/squid/customize.sh` and make the appropriate changes
+there. [This link](https://twiki.cern.ch/twiki/bin/view/Frontier/InstallSquid#Configuration)
+has information on customizing the most important parameters (cache sizes and
+machines allowed to use squid). 
 
 To set up access to the OASIS filesystem, you'll need to install EPEL and the
 OSG repositories to your worker nodes, as before:
