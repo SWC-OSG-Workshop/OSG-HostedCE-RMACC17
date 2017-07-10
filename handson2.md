@@ -5,6 +5,9 @@ title: Hands on session
 
 ---
 
+*Site Progress [Matrix](https://docs.google.com/spreadsheets/d/12TodlckvrR9Ppg2iQD6tP_8LaK5rRl6AO5_EAgZCTLU/edit?usp=sharing)*
+
+
 ### Background & Requirements
 
 The Open Science Grid team is pleased to offer a new solution, "Hosted Compute
