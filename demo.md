@@ -20,7 +20,7 @@ We briefly outline the process for integrating a campus HPC cluster with the OSG
    * Log in to the campus HPC resource and setup OSG software in the OSG user account
    * Add the new campus HPC resource information to the OSG information and job management systems
    * Test and validate job submission and execution through OSG systems
-   * [Screencast](https://asciinema.org/a/128278)
+   * [Screencast](https://asciinema.org/a/128318)
 
 ## Viewing campus HPC resource contributions
    * Visit the [OSG accounting site](https://gracc.opensciencegrid.org/dashboard/db/payload-jobs-summary?orgId=1)
