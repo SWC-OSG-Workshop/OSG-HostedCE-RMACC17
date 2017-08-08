@@ -71,7 +71,7 @@ job information such as wall hours arranged by field of science, organization,
 project etc.
 
 
-### Other Recommended Software (optional, post workshop)
+### Other Recommended Software (optional, post tutorial)
 
 #### OASIS
 
