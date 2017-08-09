@@ -20,15 +20,13 @@
         <li>Compute nodes should use RHEL/Centos/Scientific Linux 6 or 7</li>
       </ul>
     </p>
-    <h4>Cluster Information</h4>
-    <p>
-      Please fill out <a href="https://goo.gl/forms/8OukxsyG6KBSGHuR2">this
-      questionnaire</a> so that we have information about your cluster before the
-      tutorial. This will give us extra time to configure the OSG managed
-      services for your cluster.  Additionally, you should create the user that
-      the OSG infrastructure will use to submit jobs to your cluster in order to
-      facilitate the integration process during the tutorial.
-    </p>
+    <h4>Setup steps</h4>
+      <ol>
+        <li>Fill out  <a href="https://goo.gl/forms/8OukxsyG6KBSGHuR2">this questionnaire</a></li>
+        <li>Create an user on your cluster that can submit to your batch
+        manager (we suggest "osg" for the username, but other names are ok)
+        <li>Add the ssh pub key that we provide to the user's <tt>~/.ssh/authorized_keys</tt> file</li>
+      </ol>
   </div>
 </div>
 
