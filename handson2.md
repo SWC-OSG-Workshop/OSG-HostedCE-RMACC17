@@ -1,11 +1,9 @@
 ---
 layout: lesson
 root: .
-title: Hands on session
+title: Quickstart for cluster setup
 
 ---
-
-*Site Progress [Matrix](https://docs.google.com/spreadsheets/d/1z9iEh5kDW3YvjXmqVRtoYGfnP15L5M5TuFLuw68hzqM/edit?usp=sharing)*
 
 
 ### Background & Requirements
@@ -71,7 +69,7 @@ job information such as wall hours arranged by field of science, organization,
 project etc.
 
 
-### Other Recommended Software (optional, post tutorial)
+### Other Recommended Software  (Optional)
 
 #### OASIS
 
